@@ -1,0 +1,41 @@
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+  overflow: hidden;
+
+  h4 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    line-height: 26px;
+
+    &:hover {
+      white-space: normal;
+    }
+  }
+
+  img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+}
+
+.information {
+  overflow: hidden;
+  max-width: 100%;
+
+  p {
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    line-height: 26px;
+  }
+}

@@ -1,0 +1,61 @@
+@import "../variables/Variables.scss";
+
+.get-section {
+  margin: 140px auto 0;
+  text-align: center;
+  max-width: $max-size;
+
+  .users-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(282px, 1fr));
+    gap: 29px;
+    margin-top: 50px;
+  }
+
+  @media screen and (max-width: 1290px) {
+    margin-inline: 60px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-inline: 32px;
+    .users-container {
+      gap: 16px;
+    }
+  }
+
+  @media screen and (max-width: 412px) {
+    margin-inline: 16px;
+
+    .users-container {
+      gap: 20px;
+    }
+  }
+
+  h2 {
+    font-size: $header-font;
+    line-height: $header-font;
+  }
+
+  button {
+    @extend .base-button;
+
+    line-height: 26px;
+    width: 120px;
+    margin-top: 50px;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  display: block;
+  animation: rotate 1s linear infinite;
+  margin: 200px auto 600px;
+}

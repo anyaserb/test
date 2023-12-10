@@ -1,0 +1,45 @@
+@import "../variables/Variables.scss";
+
+.navigation {
+  background-color: #ffffff;
+  height: 60px;
+}
+
+.nav-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-top: 13px;
+  padding-bottom: 13px;
+
+  @media screen and (max-width: 1290px) {
+    margin-inline: 60px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-inline: 32px;
+  }
+
+  @media screen and (max-width: 412px) {
+    margin-inline: 16px;
+  }
+
+  img {
+    width: 104px;
+    height: 26px;
+  }
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+
+  a {
+    @extend .base-button;
+    line-height: 34px;
+    width: 100px;
+  }
+}

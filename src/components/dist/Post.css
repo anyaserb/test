@@ -1,0 +1,151 @@
+.post-section {
+  text-align: center;
+  margin-top: 140px;
+}
+.post-section h2 {
+  font-size: 40px;
+}
+.post-section button {
+  background-color: #f4e041;
+  border-radius: 80px;
+  line-height: 26px;
+  cursor: pointer;
+  width: 100px;
+  height: 34px;
+  text-align: center;
+  color: black;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+.post-section button:hover {
+  background-color: #ffe302;
+}
+.post-section button:disabled {
+  background-color: #b4b4b4;
+  color: #ffffff;
+}
+
+.post-container {
+  width: 380px;
+  margin: 0 auto;
+}
+
+.post-inputs {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+.post-inputs .input-container {
+  position: relative;
+}
+.post-inputs .input-container .error-input {
+  border: 2px solid #cb3d40;
+}
+.post-inputs .input-container .error-span {
+  color: #cb3d40;
+}
+.post-inputs .input-container input {
+  width: calc(380px - 18px);
+  height: 52px;
+  font-size: 16px;
+  background-color: unset;
+  border: 1px solid #d0cfcf;
+  border-radius: 4px;
+  padding: 0px;
+  padding-left: 16px;
+  outline: none;
+  color: rgba(0, 0, 0, 0.87);
+}
+.post-inputs .input-container input:valid ~ span {
+  transform: translateY(-21px);
+  font-size: 12px;
+  background-color: #f8f8f8;
+  line-height: 14px;
+}
+.post-inputs .input-container span {
+  position: absolute;
+  left: 0;
+  pointer-events: none;
+  padding: 0px 4px;
+  margin-left: 12px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #7e7e7e;
+}
+
+.post-position {
+  text-align: left;
+  margin-left: 0;
+}
+.post-position legend {
+  margin-bottom: 11px;
+}
+.post-position div {
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+}
+.post-position div input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #00bdd3;
+  border-radius: 50%;
+  background-clip: content-box;
+  padding: 4px;
+  margin-left: 0;
+  margin-right: 12px;
+  margin-top: 0;
+}
+.post-position div input:checked {
+  background-color: #00bdd3;
+}
+
+.post-photo {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  margin-top: 47px;
+  align-items: center;
+  width: 100%;
+}
+.post-photo input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 0;
+}
+.post-photo label {
+  padding: 14px 15px;
+  background-color: none;
+  color: rgba(0, 0, 0, 0.87);
+  border: 1px solid rgba(0, 0, 0, 0.87);
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  cursor: pointer;
+  z-index: 1;
+}
+.post-photo div {
+  padding: 14px 16px;
+  color: #7e7e7e;
+  border: 1px solid #d0cfcf;
+  border-left: none;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.error {
+  margin-top: 4px;
+  text-align: left;
+  padding-left: 16px;
+  color: #cb3d40;
+}

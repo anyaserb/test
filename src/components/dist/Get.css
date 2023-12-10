@@ -1,0 +1,32 @@
+.get-section {
+  margin: 0 auto;
+  margin-top: 140px;
+  text-align: center;
+  max-width: 1170px;
+}
+.get-section h2 {
+  font-size: 40px;
+}
+.get-section .users-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 29px;
+  margin-top: 50px;
+}
+.get-section button {
+  background-color: #f4e041;
+  border-radius: 80px;
+  line-height: 26px;
+  cursor: pointer;
+  width: 120px;
+  height: 34px;
+  text-align: center;
+  margin-top: 50px;
+}
+.get-section button:hover {
+  background-color: #ffe302;
+}
+.get-section button:disabled {
+  background-color: #b4b4b4;
+  color: #ffffff;
+}
